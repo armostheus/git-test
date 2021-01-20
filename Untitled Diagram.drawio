@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-20T07:34:56.471Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="CQWYbz__koKueqfGw_Ge" version="14.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-20T07:39:12.378Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36" etag="TDjQeg8xhWOluJvj40p4" version="14.2.5" type="github">
   <diagram name="Page-1" id="9f46799a-70d6-7492-0946-bef42562c5a5">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -54,10 +54,10 @@
           <mxGeometry x="470" y="170" width="120" height="50" as="geometry" />
         </mxCell>
         <mxCell id="ZwKIVA2F8PE0gVdKVEwo-11" value="&lt;ol style=&quot;line-height: 120%&quot;&gt;&lt;li&gt;Taking Basic Details from the customer.&lt;/li&gt;&lt;li&gt;Checking which age group does the customer belong to. Selecting the Annuity product for them accordingly.&lt;/li&gt;&lt;li&gt;Using the Basic Details and the Product config selected from above to generate quote from HDFC API.&lt;/li&gt;&lt;li&gt;Finalizing the desired quote for the User in our local DB.&lt;/li&gt;&lt;li&gt;Saving the User Personal Data for the finalized quote in DB.&lt;/li&gt;&lt;li&gt;Calling DMS API for every document submitted by the user.&lt;/li&gt;&lt;li&gt;Calling AppSub API - FR Waiver and Skip Scrutiny API.&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;line-height: 0%&quot;&gt;&lt;/p&gt;&lt;div&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="50" y="230" width="270" height="470" as="geometry" />
+          <mxGeometry x="50" y="230" width="270" height="300" as="geometry" />
         </mxCell>
         <mxCell id="ZwKIVA2F8PE0gVdKVEwo-13" value="&lt;ol style=&quot;line-height: 120%&quot;&gt;&lt;li&gt;Taking Basic Details from the customer.&lt;/li&gt;&lt;li&gt;Checking which age group does the customer belong to. Selecting the Annuity product for them accordingly.&lt;/li&gt;&lt;li&gt;Using the Basic Details and the Product config selected from above to generate quote from HDFC API.&lt;/li&gt;&lt;li&gt;Finalizing the desired quote for the User in our local DB.&lt;/li&gt;&lt;li&gt;Redirecting the user to Kfintech or NSDL URL so that they can complete the purchase of their annuity.&lt;/li&gt;&lt;/ol&gt;&lt;p style=&quot;line-height: 0%&quot;&gt;&lt;/p&gt;&lt;div&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="470" y="230" width="270" height="470" as="geometry" />
+          <mxGeometry x="470" y="230" width="270" height="300" as="geometry" />
         </mxCell>
         <mxCell id="ZwKIVA2F8PE0gVdKVEwo-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZwKIVA2F8PE0gVdKVEwo-14">
           <mxGeometry relative="1" as="geometry">
@@ -77,6 +77,15 @@
         </mxCell>
         <mxCell id="ZwKIVA2F8PE0gVdKVEwo-18" value="SAF not Monitored by HDFC Life" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1110" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwKIVA2F8PE0gVdKVEwo-19" value="&lt;ol&gt;&lt;li&gt;Validating PAN / Form 60 of Annuitants.&lt;/li&gt;&lt;li&gt;Incase of Aadhaar journey, validating Aadhaar card.&lt;/li&gt;&lt;li&gt;Skipping document uploads.&lt;/li&gt;&lt;li&gt;Saving the User Personal Data for the finalized quote in DB.&lt;/li&gt;&lt;li&gt;Calling AppSub API - FR Waiver and Skip Scrutiny API.&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="820" y="580" width="170" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwKIVA2F8PE0gVdKVEwo-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZwKIVA2F8PE0gVdKVEwo-11" target="ZwKIVA2F8PE0gVdKVEwo-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZwKIVA2F8PE0gVdKVEwo-21" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;ol&gt;&lt;li&gt;Saving the User Personal Data for the finalized quote in DB.&lt;/li&gt;&lt;li&gt;Calling DMS API for every document submitted by the user.&lt;/li&gt;&lt;li&gt;Calling AppSub API - FR Waiver and Skip Scrutiny API.&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="580" width="170" height="310" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
